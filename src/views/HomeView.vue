@@ -1,18 +1,50 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div id="stock">
+  
+    <ItemApp />
+    <ItemApp />
+    <ItemApp />
+    <ItemApp />
+
+  
   </div>
+
 </template>
 
 <script>
+import ItemApp from '@/components/ItemApp.vue';
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
 
 export default {
-  name: 'HomeView',
+
   components: {
-    HelloWorld
+    ItemApp
   }
+
 }
+
 </script>
+
+
+<style scoped="css">
+
+
+#stock {
+
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  padding: 1vh;
+
+  flex-wrap: wrap;
+
+
+}
+
+
+</style>
