@@ -6,6 +6,8 @@
     <ItemApp />
     <ItemApp />
     <ItemApp />
+    <ItemApp />
+    <ItemApp />
 
   
   </div>
@@ -35,7 +37,7 @@ export default {
 
   display: flex;
 
-  flex-direction: row;
+  justify-content: center;
 
   align-items: center;
 
