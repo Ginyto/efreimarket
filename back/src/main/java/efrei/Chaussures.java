@@ -1,24 +1,29 @@
-
+package efrei;
 
 
 
 public class Chaussures {
 
-    Int id;
+    int id;
     String nom;
     String couleur;
-    Int prix;
+    int prix;
 
-    public Chaussures(Int id, String nom, String couleur, Int prix){
+    public Chaussures(int id, String nom, String couleur, int prix){
         this.id = id;
         this.nom = nom;
         this.couleur = couleur;
         this.prix= prix;
     }
-    public Int getId() {
+
+    public Chaussures(int id){
+        this.id= id;
+    }
+
+    public int getId() {
         return id;
     }
-    public void setId(Int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -37,42 +42,22 @@ public class Chaussures {
     public void setCouleur(String couleur) {
         this.couleur = couleur;
     }
-    public Int getPrix() {
+    public int getPrix() {
         return prix;
     }
 
-    public void setPrix(Int prix) {
+    public void setPrix(int prix) {
         this.prix = prix;
     }
 
-    public void getOrders(){
+
+    public void CreateCommande(){
 
     }
-
-    public void submitOrder(){
-    }
-
-    public void getOrdersDetails(){
-
-    }
-
-    public void getOrdersForCustomer(){
-
-    }
-
-    public void updateOrder(){
-
-    }
-
-    public void addOrderItem(){
-
-    }
-
-    public void cancelOrder(){
-
-    }
-
 
 }
+
+
+
     
   
