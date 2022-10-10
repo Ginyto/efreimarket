@@ -1,9 +1,6 @@
 
 
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.core.MediaType;
+
 
 public class Chaussures {
 
@@ -47,6 +44,34 @@ public class Chaussures {
     public void setPrix(Int prix) {
         this.prix = prix;
     }
+
+    public void getOrders(){
+
+    }
+
+    public void submitOrder(){
+    }
+
+    public void getOrdersDetails(){
+
+    }
+
+    public void getOrdersForCustomer(){
+
+    }
+
+    public void updateOrder(){
+
+    }
+
+    public void addOrderItem(){
+
+    }
+
+    public void cancelOrder(){
+
+    }
+
 
 }
     
