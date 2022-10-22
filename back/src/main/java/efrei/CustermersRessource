@@ -1,0 +1,33 @@
+package efrei;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("costumer")
+@GET
+@Produces(MediaType.APPLICATION_ATOM_XML)
+
+public class CostumersRessource {
+
+    CostumersRepository repo= new CostumersRepository(null);
+
+    @GET
+    @Produces(MediaType.APPLICATION_XML)
+
+    public List<Costumers> getCostumers()
+    {
+        return repo.getCostumers();
+    }
+
+    @POST
+@Path("/Costumers")
+    
+    public Costumers createCostumers(){
+
+        return repo.create();
+
+    }
+   
+}

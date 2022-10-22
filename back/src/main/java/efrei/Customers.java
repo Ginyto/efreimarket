@@ -1,20 +1,13 @@
 package efrei;
 
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.core.MediaType;
-
-@Path("costumer")
-@GET
-@Produces(MediaType.APPLICATION_ATOM_XML)
-
-
 public class Customers{
     int id;
     String nom;
     String prenom;
+    
+    public Customers() {
 
+    }
 
     
     public Customers(int id, String nom, String prenom){
@@ -52,14 +45,18 @@ public class Customers{
         
     }
 
-    public void addCustomers(){
-    Customers c1 = new Customers;
+    public void addCustomers() {
+    }
+/* 
+    public Customers addCustomers(){
+    Customers c1 = new Customers();
     c1.setNom("Lanouille");
     c1.setPrenom("Clement");
 
     return c1;
 
     }
+    */
 
     public void getCustomersDetails(){
 
