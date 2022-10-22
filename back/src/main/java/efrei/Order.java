@@ -44,7 +44,7 @@ public class Order {
 
     public void addOrderItem(){
         Chaussures commande = new Chaussures(Commandes.size() + 1);
-        commande.CreateCommande();
+        
         Commandes.add(commande);
 
     }

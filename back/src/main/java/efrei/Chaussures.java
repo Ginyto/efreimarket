@@ -1,19 +1,24 @@
 package efrei;
-
+import java.util.Scanner; 
 
 
 public class Chaussures {
 
-    int id;
-    String nom;
-    String couleur;
-    int prix;
+    private int id;
+    private String nom;
+    private String couleur;
+    private int prix;
+    Scanner scan = new Scanner(System.in);
+    
 
     public Chaussures(int id, String nom, String couleur, int prix){
         this.id = id;
         this.nom = nom;
         this.couleur = couleur;
         this.prix= prix;
+    }
+    public Chaussures(){
+        
     }
 
     public Chaussures(int id){
@@ -51,9 +56,8 @@ public class Chaussures {
     }
 
 
-    public void CreateCommande(){
-
-    }
+   
+	
 
 }
 

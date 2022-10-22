@@ -9,6 +9,7 @@ import jakarta.ws.rs.core.MediaType;
 @GET
 @Produces(MediaType.APPLICATION_ATOM_XML)
 
+
 public class Customers{
     int id;
     String nom;
