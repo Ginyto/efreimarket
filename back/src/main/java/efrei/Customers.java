@@ -1,24 +1,37 @@
-package main.java.efrei;
+package efrei;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("costumer")
+@GET
+@Produces(MediaType.APPLICATION_ATOM_XML)
 
 public class Customers{
     int id;
     String nom;
     String prenom;
+
+
     
-    public Customers(Int id, String nom, String prenom){
+    public Customers(int id, String nom, String prenom){
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
     }
+    
 
     public int getId() {
         return id;
     }
-    public void setId(Int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
     public String getNom() {
+
         return nom;
     }
     public void setNom(String nom) {
@@ -35,9 +48,15 @@ public class Customers{
 
     public void getCustomers(){
 
+        
     }
 
     public void addCustomers(){
+    Customers c1 = new Customers;
+    c1.setNom("Lanouille");
+    c1.setPrenom("Clement");
+
+    return c1;
 
     }
 
@@ -49,7 +68,8 @@ public class Customers{
         
     }
 
-    public deleteCustomer(){
+    public void deleteCustomer(){
     }
+
 
 }

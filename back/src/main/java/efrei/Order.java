@@ -65,14 +65,14 @@ public class Order {
         
 
     }
-
+/* 
     public void addCustomers(){
         Customers client = new Customers(Clients.size() + 1);
             client.CreateUser();
             Clients.add(client);
 
     }
-
+*/
     public void getCustomersDetails(){
 
         Clients.forEach(client-> System.out.println( client));
