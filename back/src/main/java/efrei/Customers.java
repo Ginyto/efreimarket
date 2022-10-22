@@ -1,18 +1,11 @@
-package efrei;
-import java.util.Scanner; 
+package main.java.efrei;
 
 public class Customers{
-    public int id;
-    public String nom;
-    public String prenom;
-
-    Scanner scan = new Scanner(System.in);
-    public Customers(int id) {
-        this.id = id;
-    }
-
+    int id;
+    String nom;
+    String prenom;
     
-    public Customers(int id, String nom, String prenom){
+    public Customers(Int id, String nom, String prenom){
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -21,7 +14,7 @@ public class Customers{
     public int getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Int id) {
         this.id = id;
     }
 
@@ -40,19 +33,23 @@ public class Customers{
         this.prenom = prenom;
     }
 
-    
-
-    public void CreateUser(){
-        
-
-    String name = scan.next("le nom?");
-    nom = name;
-
-    String firstname = scan.next("Le prenom?");
-    prenom = firstname;
-
+    public void getCustomers(){
 
     }
 
-    
+    public void addCustomers(){
+
+    }
+
+    public void getCustomersDetails(){
+
+    }
+
+    public void updateCustomer(){
+        
+    }
+
+    public deleteCustomer(){
+    }
+
 }
