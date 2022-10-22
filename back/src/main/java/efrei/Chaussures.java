@@ -4,10 +4,10 @@
 
 public class Chaussures {
 
-    Int id;
+    int id;
     String nom;
     String couleur;
-    Int prix;
+    int prix;
 
     public Chaussures(Int id, String nom, String couleur, Int prix){
         this.id = id;
