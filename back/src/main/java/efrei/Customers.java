@@ -1,6 +1,7 @@
 package efrei;
 import java.util.Scanner; 
 
+
 public class Customers{
     public int id;
     public String nom;
