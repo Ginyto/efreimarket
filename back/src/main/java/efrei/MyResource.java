@@ -19,13 +19,9 @@ import jakarta.ws.rs.core.Response;
 /**
  * Root resource (exposed at "myresource" path)
  */
-<<<<<<< HEAD
-@Path("/myresource")
-=======
 @Path("myresource")
 
 
->>>>>>> 90315039a7931e3941f96a1a9e055334256529fd
 public class MyResource {
 
     /**
