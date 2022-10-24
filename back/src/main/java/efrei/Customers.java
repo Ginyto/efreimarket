@@ -1,4 +1,4 @@
-package main.java.efrei;
+package efrei;
 
 
 public class Customers{
@@ -6,7 +6,7 @@ public class Customers{
     String nom;
     String prenom;
     
-    public Customers(Int id, String nom, String prenom){
+    public Customers(int id, String nom, String prenom){
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -15,7 +15,7 @@ public class Customers{
     public int getId() {
         return id;
     }
-    public void setId(Int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -50,7 +50,7 @@ public class Customers{
         
     }
 
-    public deleteCustomer(){
+    public void deleteCustomer(){
     }
 
 }
