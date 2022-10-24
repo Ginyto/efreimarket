@@ -71,8 +71,13 @@ public class Order {
             client.CreateUser();
             Clients.add(client);
 
+<<<<<<< HEAD
     }*/
 
+=======
+    }
+*/
+>>>>>>> 880a110135a26865cc59b1e7c5096d2f7a40acd6
     public void getCustomersDetails(){
 
         Clients.forEach(client-> System.out.println( client));

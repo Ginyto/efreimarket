@@ -21,7 +21,13 @@ import java.sql.SQLException;
 /**
  * Root resource (exposed at "myresource" path)
  */
+<<<<<<< HEAD
 
+=======
+@Path("myresource")
+
+
+>>>>>>> 880a110135a26865cc59b1e7c5096d2f7a40acd6
 public class MyResource {
     public static void main(String[] args) {
     String connectionUrl =
