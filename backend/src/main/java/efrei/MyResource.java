@@ -11,6 +11,8 @@ import jakarta.ws.rs.core.MediaType;
 @Path("myresource")
 public class MyResource {
 
+    ToData toData = new ToData();
+
     /**
      * Method handling HTTP GET requests. The returned object will be sent
      * to the client as "text/plain" media type.
@@ -18,8 +20,8 @@ public class MyResource {
      * @return String that will be returned as a text/plain response.
      */
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String getIt() {
-        return "Got it!";
+        return "Hello ressources!";
     }
 }
