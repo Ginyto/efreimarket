@@ -14,6 +14,8 @@ public class DB {
 
     Statement state = null;
 
+    ResultSet result = null;
+
     public DB() {
 
         try {
@@ -22,6 +24,8 @@ public class DB {
             Connection connection = DriverManager.getConnection(url, username, password);
 
             Statement statement = connection.createStatement();
+
+            
 
             this.con = connection;
             this.state = statement;
@@ -112,7 +116,6 @@ public class DB {
     }
 
     public String getPrice(Integer id) {
-                                    
                                     String price = "";
                             
                                     try {
@@ -128,5 +131,62 @@ public class DB {
                             
                                     return price;
                             
+    }
+
+    public String getCity(Integer id) {
+                                            
+                                            String city = "";
+                                    
+                                            try {
+                                                ResultSet result = state.executeQuery("SELECT city FROM sneakers WHERE id = " + id);
+                                    
+                                                while (result.next()) {
+                                                    city = result.getString("city");
+                                                }
+                                    
+                                            } catch (Exception e) {
+                                                System.out.println(e);
+                                            }
+                                    
+                                            return city;
+                                    
+    }
+
+    public Integer getUserId(Integer id) {
+                                                    
+                                                    Integer userId = 0;
+                                            
+                                                    try {
+                                                        ResultSet result = state.executeQuery("SELECT owner FROM sneakers WHERE id = " + id);
+                                            
+                                                        while (result.next()) {
+                                                            userId = result.getInt("owner");
+                                                        }
+                                            
+                                                    } catch (Exception e) {
+                                                        System.out.println(e);
+                                                    }
+                                            
+                                                    return userId;
+                                            
+    }
+
+    public Integer getBorrowId(Integer id) {
+                                                            
+                                                            Integer borrowId = 0;
+                                                    
+                                                            try {
+                                                                ResultSet result = state.executeQuery("SELECT borrower FROM sneakers WHERE id = " + id);
+                                                    
+                                                                while (result.next()) {
+                                                                    borrowId = result.getInt("borrower");
+                                                                }
+                                                    
+                                                            } catch (Exception e) {
+                                                                System.out.println(e);
+                                                            }
+                                                    
+                                                            return borrowId;
+                                                    
     }
 }
